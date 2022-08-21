@@ -10,6 +10,11 @@ COLORS:
 
 /* CSS Reset */
 
+::selection {
+  background-color: #1931ac;
+  color: #fff;
+}
+
 *,
 *::after,
 *::before {
@@ -37,14 +42,53 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      rgba(46, 53, 240, 0.529),
-      rgba(9, 31, 141, 0.397)
+      rgba(79, 51, 236, 0.661),
+      rgba(25, 49, 172, 0.672)
     ),
     url("../img/snow-hero-xxl.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-  clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 /* Logo */
+
+.logo-box {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  outline: 1px dashed rgba(46, 53, 240, 0.529);
+}
+
+.logo {
+  height: 7.2rem;
+}
+
+/* Primary heading*/
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 700;
+  letter-spacing: 3.5rem;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 1.65rem;
+}
