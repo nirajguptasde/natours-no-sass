@@ -35,7 +35,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.7;
   color: #777;
-  padding: 3rem;
+  padding: 2rem;
 }
 
 .header {
@@ -72,11 +72,13 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+  margin-bottom: 6rem;
 }
 
 .heading-primary-main {
@@ -91,4 +93,33 @@ body {
   font-size: 2rem;
   font-weight: 400;
   letter-spacing: 1.65rem;
+  text-align: justify;
+}
+
+/* buttons */
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 2px;
+  border-radius: 100px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  color: #444;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+  padding: 15px 40px;
 }
